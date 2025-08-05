@@ -10,7 +10,7 @@ function App() {
 
   const handleImageCapture = async (base64Image: string) => {
     try {
-      const response = await fetch("https://192.168.5.24:5000/face", {
+      const response = await fetch("http://192.168.5.24:5000/face", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
